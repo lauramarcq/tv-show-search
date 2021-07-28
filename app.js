@@ -18,7 +18,7 @@ form.addEventListener('submit', async function (e) {
         // object from params with key value pair with query specified
         const config = { params: { q: searchTerm } }
         // api call / await / 
-        const res = await axios.get(`http://api.tvmaze.com/search/shows/`, config);
+        const res = await axios.get(`https://api.tvmaze.com/search/shows/`, config);
         // erase image container after new search
         imageContainer.innerHTML = '';
         makeImages(res.data)
